@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcularPremio", "CalcularPremio.csproj", "{73B12600-8427-4EBA-8C24-2C3A6E3FC009}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73B12600-8427-4EBA-8C24-2C3A6E3FC009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73B12600-8427-4EBA-8C24-2C3A6E3FC009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73B12600-8427-4EBA-8C24-2C3A6E3FC009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73B12600-8427-4EBA-8C24-2C3A6E3FC009}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0ADE0E3-BEC0-45AE-9C06-7E307275D9F0}
+	EndGlobalSection
+EndGlobal
