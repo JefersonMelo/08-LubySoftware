@@ -20,7 +20,22 @@ namespace BuscarPessoa
 
         static void Main( string[] args )
         {
-            
+            string[] vetor = new string[] {
+                            "John Doe",
+                            "Jane Doe",
+                            "Alice Jones",
+                            "Bobby Louis",
+                            "Lisa Romero"
+            };
+            Console.Write("Pesquisa: ");
+            string pesquisa = Console.ReadLine();
+            foreach (var item in vetor)
+            {
+                if (item.Contains(pesquisa))
+                {
+                    Console.WriteLine($"\n{item}");
+                }
+            }
         }
     }
 }
