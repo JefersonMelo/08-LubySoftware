@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace CalcularValorComDescontoFormatado
 {
@@ -10,14 +11,26 @@ namespace CalcularValorComDescontoFormatado
         CalcularValorComDescontoFormatado("R$ 6.800,00", "30%") == "R$ 4.760,00"; //true  
          */
 
-        static string CalcularValorComDescontoFormatado( )
+        static string CalcularValorComDescontoFormatado( string valor, string desconto)
         {
-
+            string[] convertValor = valor.Split('R', '$', ' ', ',');
+            string[] convertDesconto = desconto.Split('%');
+            double cedula, moeda, v, d, r;
+            cedula = double.Parse(convertValor[3]);
+            moeda = double.Parse(convertValor[4]);
+            d = double.Parse(convertDesconto[0]);
+            v = cedula + (moeda / 100);
+            r = v - v * (d / 100.0);
+            return $"{r:C2}";
         }
 
         static void Main( string[] args )
         {
-            Console.WriteLine("Hello World!");
+            Console.Write("Valor: ");
+            string valor = Console.ReadLine();
+            Console.Write("Desconto: ");
+            string desconto = Console.ReadLine();
+            Console.WriteLine(CalcularValorComDescontoFormatado(valor, desconto));
         }
     }
 }
