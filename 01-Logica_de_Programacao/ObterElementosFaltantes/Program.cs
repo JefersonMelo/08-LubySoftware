@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace ObterElementosFaltantes
 {
@@ -25,11 +26,36 @@ namespace ObterElementosFaltantes
         int[] vetor7 = new int[] { 1,3,4,5 };
         int[] vetor8 = new int[] { 1,3,4,5 };
         ObterElementosFaltantes(vetor7, vetor8) == new int[] { }; //true 
+        https://docs.microsoft.com/pt-br/dotnet/api/system.array.clone?view=net-5.0#System_Array_Clone
+        https://docs.microsoft.com/pt-br/dotnet/api/system.array.resize?view=net-5.0
          */
 
         static void Main( string[] args )
         {
-            
+            int[] vetor1 = new int[] { 1, 2, 5 };
+            int[] vetor2 = new int[] { 1, 2, 3, 4, 5 };
+            ArrayList list = new ArrayList(); 
+            if (vetor1.Length < vetor2.Length)// Garantir vetor1 sempre o maior 
+            {
+                int[] vetaux = (int[])vetor2.Clone();
+                vetor2 = (int[])vetor1.Clone();
+                vetor1 = (int[])vetaux.Clone();
+                
+            }
+
+            for (int i = 0; i < vetor1.Length; i++)
+            {
+                Array.Resize(ref vetor2, vetor2.Length + (vetor1.Length / 2));
+                
+                if (vetor1[i] != vetor2[i])
+                {
+                    list.Add(vetor1[i]);
+                }
+            }
+            foreach (var item in list)
+            {
+                Console.Write($"{item} ");
+            }
         }
     }
 }
