@@ -28,6 +28,8 @@ namespace ObterElementosFaltantes
         ObterElementosFaltantes(vetor7, vetor8) == new int[] { }; //true 
         https://docs.microsoft.com/pt-br/dotnet/api/system.array.clone?view=net-5.0#System_Array_Clone
         https://docs.microsoft.com/pt-br/dotnet/api/system.array.resize?view=net-5.0
+        https://www.clubedohardware.com.br/topic/1078955-comparar-valores-dentro-de-um-%C3%BAnico-vetor/
+
          */
 
         static void Main( string[] args )
