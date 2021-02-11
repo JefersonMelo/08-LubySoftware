@@ -28,7 +28,7 @@ namespace ObterElementosPares
                     j = vet[i];
                     lista.Add(j);
                 }
-                
+
             }
             foreach (var item in lista)
             {
