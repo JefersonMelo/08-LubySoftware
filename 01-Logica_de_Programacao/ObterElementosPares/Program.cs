@@ -18,21 +18,17 @@ namespace ObterElementosPares
             int n = int.Parse(Console.ReadLine());
             int[] vet = new int[n];
             ArrayList lista = new ArrayList();
-            bool b;
 
             for (int i = 0; i < vet.Length; i++)
             {
                 vet[i] = int.Parse(Console.ReadLine());
-                do
-                {
-                    if (vet[i] % 2 == 0)
-                    {
-                        j = vet[i];
-                        lista.Add(j);
-                    }
-                    b = false;
-                } while (b != false);
 
+                if (vet[i] % 2 == 0)
+                {
+                    j = vet[i];
+                    lista.Add(j);
+                }
+                
             }
             foreach (var item in lista)
             {
