@@ -12,7 +12,16 @@ namespace TransformarEmMatriz
 
         static void Main( string[] args )
         {
-            
+            string[] inteiros = Console.ReadLine().Split(',');
+            int[] vet = new int[inteiros.Length];
+            for (int i = 0; i < vet.Length; i++)
+            {
+                vet[i] = int.Parse(inteiros[i]);
+            }
+            foreach (var item in vet)
+            {
+                Console.Write($"{item} ");
+            }
         }
     }
 }
