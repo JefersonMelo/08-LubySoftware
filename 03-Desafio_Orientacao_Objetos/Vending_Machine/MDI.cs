@@ -22,8 +22,10 @@ namespace Vending_Machine
     7-A máquina deverá contabilizar e solicitar o valor faltante para finalizar a venda, caso haja valor 
     de troco para deverá informar o valor.
     8-A máquina não necessita de lógica de contagem de notas, será apenas necessário informar os valores.
-    9-Caso necessário crie um documento simples com informações de como executar o programa.     
+    9-Caso necessário crie um documento simples com informações de como executar o programa.   
+    https://github.com/lubysoftware/join/tree/asp-net
      */
+
     public partial class MDI : Form
     {
         private int childFormNumber = 0;
