@@ -1,37 +1,37 @@
 # 1 Lógica de Programação
 ### 1.1 Implemente a função abaixo para calcular fatorial de um número.
-// 5! = 5 · 4 · 3 · 2 · 1 = 120
-CalcularFatorial(5) == 120//true
-1.2 Implemente a função abaixo que calcula o valor total do prêmio somando fator do tipo do prêmio conforme valores:
-Tipo: "basic" fator multiplicação do prêmio: 1
-Tipo: "vip" fator multiplicação do prêmio: 1.2
-Tipo: "premium" fator multiplicação do prêmio: 1.5
-Tipo: "deluxe" fator multiplicação do prêmio: 1.8
-Tipo: "special" fator multiplicação do prêmio: 2
-Regras
-A função também deverá provir um parâmetro para que seja passado fator de multiplicação próprio.
-Quando parâmetro de fator de multiplicação próprio for informado e válido o mesmo deve sobrescrever o cálculo do tipo de prêmio.
-O prêmio nunca deve ter um valor negativo ou igual a zero.
-CalcularPremio(100, "vip", null) == 120.00;//true
-CalcularPremio(100, "basic", 3) == 300.00;//true
-1.3 Implemente a função abaixo para contar quantos números primos existe até o número informado.
+* // 5! = 5 · 4 · 3 · 2 · 1 = 120
+* CalcularFatorial(5) == 120//true
+### 1.2 Implemente a função abaixo que calcula o valor total do prêmio somando fator do tipo do prêmio conforme valores:
+* Tipo: "basic" fator multiplicação do prêmio: 1
+* Tipo: "vip" fator multiplicação do prêmio: 1.2
+* Tipo: "premium" fator multiplicação do prêmio: 1.5
+* Tipo: "deluxe" fator multiplicação do prêmio: 1.8
+* Tipo: "special" fator multiplicação do prêmio: 2
+#### * Regras
+* A função também deverá provir um parâmetro para que seja passado fator de multiplicação próprio.
+* Quando parâmetro de fator de multiplicação próprio for informado e válido o mesmo deve sobrescrever o cálculo do tipo de prêmio.
+* O prêmio nunca deve ter um valor negativo ou igual a zero.
+* CalcularPremio(100, "vip", null) == 120.00;//true
+* CalcularPremio(100, "basic", 3) == 300.00;//true
+### 1.3 Implemente a função abaixo para contar quantos números primos existe até o número informado.
 //Número primo: 2
 //Número primo: 3
 //Número primo: 5
 //Número primo: 7
 //Total de números primos: 4
 ContarNumerosPrimos(10) == 4//true
-1.4 Implemente a função abaixo que conta e calcula a quantidade de vogais dentro de uma string.
+### 1.4 Implemente a função abaixo que conta e calcula a quantidade de vogais dentro de uma string.
 CalcularVogais("Luby Software") == 4//true
-1.5 Implemente a função abaixo que aplica uma porcentagem de desconto a um valor e retorna o resultado.
+### 1.5 Implemente a função abaixo que aplica uma porcentagem de desconto a um valor e retorna o resultado.
 Lembre-se que as entradas e saídas dos dados são strings que devem ser tratadas.
 CalcularValorComDescontoFormatado("R$ 6.800,00", "30%") == "R$ 4.760,00"; //true 
-1.6 Implemente a função abaixo que obtém duas string de datas e calcula a diferença de dias entre elas.
+### 1.6 Implemente a função abaixo que obtém duas string de datas e calcula a diferença de dias entre elas.
 CalcularDiferencaData("10122020", "25122020") == 15; //true 
-1.7 Implemente a função abaixo que retorna um novo vetor com todos elementos pares do vetor informado.
+### 1.7 Implemente a função abaixo que retorna um novo vetor com todos elementos pares do vetor informado.
 int[] vetor = new int[] { 1,2,3,4,5 };
 ObterElementosPares(vetor) == new int { 2, 4 }; //true 
-1.8 Implemente a função abaixo que deve buscar um ou mais elementos no vetor que contém o valor ou parte do valor informado na busca.
+### 1.8 Implemente a função abaixo que deve buscar um ou mais elementos no vetor que contém o valor ou parte do valor informado na busca.
 string[] vetor = new string[] {
     "John Doe",
     "Jane Doe",
@@ -43,9 +43,9 @@ string[] vetor = new string[] {
 BuscarPessoa(vetor, "Doe") == new string[] { "John Doe", "Jane Doe" };//true
 BuscarPessoa(vetor, "Alice") == new string[] { "Alice Jones" };//true
 BuscarPessoa(vetor, "Louis") == new string[] { };//true
-1.9 Implemente a função abaixo que obtém uma string com números separados por vírgula e transforma em um array de array de inteiros com no máximo dois elementos.
+### 1.9 Implemente a função abaixo que obtém uma string com números separados por vírgula e transforma em um array de array de inteiros com no máximo dois elementos.
 TransformarEmMatriz("1,2,3,4,5,6") == new int[][] { new int[] { 1, 2 }, new int[] { 3, 4 }, new int[] { 5, 6 } }; //true 
-1.10 Implemente a função abaixo que compara dois vetores e cria um novo vetor com os elementos faltantes de ambos.
+### 1.10 Implemente a função abaixo que compara dois vetores e cria um novo vetor com os elementos faltantes de ambos.
 // faltam elementos no vetor2
 int[] vetor1 = new int[] { 1,2,3,4,5 };
 int[] vetor2 = new int[] { 1,2,5 };
