@@ -86,12 +86,12 @@ Gerênciamento de tabelas
 *	pessoa_id: int(FK)
 
 
-		CREATE TABLE tabela_telefone(
-			id INTEGER PRIMARY KEY,
-			telefone VARCHAR(200),
-			pessoa_id INT,
-			FOREIGN KEY(pessoa_id) REFERENCES tabela_pessoa(id)
-		);
+	CREATE TABLE tabela_telefone(
+		id INTEGER PRIMARY KEY,
+		telefone VARCHAR(200),
+		pessoa_id INT,
+		FOREIGN KEY(pessoa_id) REFERENCES tabela_pessoa(id)
+	);
 
 
 ### 2.9 Crie uma query para criar uma índice do tipo único na coluna telefone da 'tabela_telefone'.
