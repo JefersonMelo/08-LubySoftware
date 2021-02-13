@@ -1,5 +1,5 @@
 # 08-LubySoftware
-## Respostas das questões para candidato ao programa de estágio incubadora ASP.NET Luby
+## Respostas das questões candidato ### Jeferson Melo ### estágio incubadora ASP.NET Luby
 Questões para candidato ao programa de estágio incubadora ASP.NET Luby
 Esse teste inclui 10 questões envolvendo lógica de programação e estrutura de dados.
 10 questões envolvendo criações de scripts SQL.
