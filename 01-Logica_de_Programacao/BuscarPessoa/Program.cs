@@ -27,6 +27,7 @@ namespace BuscarPessoa
                             "Bobby Louis",
                             "Lisa Romero"
             };
+
             Console.Write("Pesquisa: ");
             string pesquisa = Console.ReadLine();
             foreach (var item in vetor)
