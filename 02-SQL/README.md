@@ -1,6 +1,6 @@
 # 2 SQL
 ## Resolva as questões utilizando as tabelas abaixo como referência
--
+
 		+----+--------------+
 		| tabela_pessoa     |
 		+----+--------------+
@@ -22,7 +22,7 @@
 		|  3 | Evento C       |  2        |
 		|  4 | Evento D       |  NULL     |
 		+----+----------------+-----------+
--
+
 ### 2.1 Crie uma query para selecionar todas as pessoas 'tabela_pessoa' e os respectivos eventos 'tabela_evento' o qual elas participam.
 ### 2.2 Crie uma query para selecionar todas as pessoas 'tabela_pessoa' com sobrenome 'Doe'.
 ### 2.3 Crie uma query para adicionar um novo evento 'tabela_evento' e relacionar à pessoa 'Lisa Romero'.
