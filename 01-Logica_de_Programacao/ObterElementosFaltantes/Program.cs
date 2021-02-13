@@ -37,21 +37,21 @@ namespace ObterElementosFaltantes
             int[] vetor1 = new int[] { 1, 2, 5 };
             int[] vetor2 = new int[] { 1, 2, 3, 4, 5 };
             ArrayList list = new ArrayList(); 
-            if (vetor1.Length < vetor2.Length)// Garantir vetor1 sempre o maior 
+
+            if (vetor1.Length < vetor2.Length)// Garantir vetor1 sempre o maior para gerar ero no loop for.
             {
                 int[] vetaux = (int[])vetor2.Clone();
                 vetor2 = (int[])vetor1.Clone();
                 vetor1 = (int[])vetaux.Clone();
-                
             }
 
             for (int i = 0; i < vetor1.Length; i++)
             {
-                Array.Resize(ref vetor2, vetor2.Length + (vetor1.Length / 2));
+                Array.Resize(ref vetor2, vetor2.Length + (vetor1.Length / 2));// Acrescentar posições no vetor2 para não esyourar pilha
                 
-                if (vetor1[i] != vetor2[i])
+                if (vetor1[i] != vetor2[i])// Por ter acrescentado posições, 0 != 5 e acaba sendo impresso. Não solucionado. Testes com List<> mas sem sucesso.
                 {
-                    list.Add(vetor1[i]);
+                    list.Add(vetor1[i]);// Recebe os que são diferenetes.
                 }
             }
             foreach (var item in list)
