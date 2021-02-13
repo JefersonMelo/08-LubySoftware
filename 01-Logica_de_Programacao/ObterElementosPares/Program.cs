@@ -15,24 +15,26 @@ namespace ObterElementosPares
         static void Main( string[] args )
         {
             int j;
+            Console.Write("Entre com o tamanho do vetor: ");
             int n = int.Parse(Console.ReadLine());
-            int[] vet = new int[n];
+            int[] vet = new int[n];// vetor comescolha do usuário
             ArrayList lista = new ArrayList();
 
             for (int i = 0; i < vet.Length; i++)
             {
-                vet[i] = int.Parse(Console.ReadLine());
+                vet[i] = int.Parse(Console.ReadLine());// entrada de dados nas posições i
 
-                if (vet[i] % 2 == 0)
+                if (vet[i] % 2 == 0)// Condição par
                 {
                     j = vet[i];
-                    lista.Add(j);
+                    lista.Add(j);// Adicionando pares na lista
                 }
 
             }
+
             foreach (var item in lista)
             {
-                Console.Write($"{item} ");
+                Console.Write($"{item} ");// impressão dos pares
             }
         }
     }
