@@ -14,10 +14,8 @@ namespace Maquina_de_Vendas
         4-A máquina só pode vender produtos com quantidade em estoque disponível.
         5-A máquina deverá contabilizar as vendas e mostrar o valor total das vendas realizadas.
         6-Uma venda só poderá ser concluída ao inserir o valor total do produto.
-
         7-A máquina deverá contabilizar e solicitar o valor faltante para finalizar a venda, caso haja valor 
         de troco para deverá informar o valor.
-
         8-A máquina não necessita de lógica de contagem de notas, será apenas necessário informar os valores.
         9-Caso necessário crie um documento simples com informações de como executar o programa.   
         https://github.com/lubysoftware/join/tree/asp-net
@@ -27,58 +25,79 @@ namespace Maquina_de_Vendas
         {
             Produto p = new Produto();
             Venda v = new Venda();
+            Estoque e = new Estoque();
+
             Console.WriteLine("1-Comprar | 2-Conferir Estoque?");
             int r = int.Parse(Console.ReadLine());
 
-            if (r == 2)// verificar estoque
+            if (r == 2)// Verificar estoque
             {
-                Console.Write("Coca | Pepsi | Itubaina | Total: ");
-                p.visualizarEstoque(p.Nome = Console.ReadLine().ToLower());
-                Console.WriteLine($"Quantidade {p.Nome}: {p.visualizarEstoque(p.Nome)}");
+                do
+                {
+                    Console.Write("Entre com a senha: ");
+                    string senha = Console.ReadLine();
+                    if (senha == "$$")// Senha para verficar estoque
+                    {
+                        Console.Write("Coca | Pepsi | Itubaina | Total: ");
+                        e.visualizarEstoque(p.Nome = Console.ReadLine().ToLower());
+                        Console.WriteLine($"Quantidade {p.Nome}: {e.visualizarEstoque(p.Nome)}");
+                        Console.WriteLine($"Valor Total em Vendas: {v.contabilidade(p):C2}");
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Senha Não Confere");
+                        break;
+                    }
+
+                } while (true);
+
             }
-            else
+            else// Compra
             {
                 Console.Write("Refris Disponíveis: Coca, Pepsi, Itubaina.\nEscolha Um Refri: ");
                 p.Nome = Console.ReadLine().ToLower();
-                Console.WriteLine($"Valor da Unidade: {p.valorUniade(p.Nome)}");
+                Console.WriteLine($"Valor da Unidade: {e.valorUniade(p.Nome):C2}");
                 Console.Write("Quantidade: ");
                 p.QtdItem = int.Parse(Console.ReadLine());
-                Console.WriteLine($"{v.vendido(p.Nome)}");// Calcula o valor da compra
-                Console.Write("Para concluír a compra, entre com o valor total da sua compra: ");
+                Console.WriteLine($"Valor de Sua Compra: {v.vendido(p):C2}");// Calcula o valor da compra
+                Console.Write("Pagamento: ");
                 double verificaValor = double.Parse(Console.ReadLine());
                 double valorRetorno;
                 do
                 {
-                    if (p.visualizarEstoque(p.Nome) < p.QtdItem)// Estoque menor que a quantidade requerida na compra
+                    if (e.visualizarEstoque(p.Nome) < p.QtdItem)// Estoque menor que a quantidade requerida na compra
                     {
                         Console.WriteLine($"Não é possível realizar a venda, o estoque menor que seu pedido.\n" +
-                                          $"Quantidade atual{p.visualizarEstoque(p.Nome)}");
+                                          $"Quantidade atual{e.visualizarEstoque(p.Nome)}");
                         break;
                     }
-                    else if (verificaValor != v.vendido(p.Nome))
+                    else if (verificaValor != v.vendido(p))
                     {
-                        if (verificaValor < v.vendido(p.Nome))// Valor menor, requer complemento
+                        if (verificaValor < v.vendido(p))// Valor menor, requer complemento
                         {
-                            Console.WriteLine($"O Valor da Sua Compra: {v.vendido(p.Nome)}\n" +
-                                              $"Valor Que Falta: {v.vendido(p.Nome) - verificaValor:C2}");
+                            Console.WriteLine($"O Valor da Sua Compra: {v.vendido(p):C2}\n" +
+                                              $"Valor Que Falta: {v.vendido(p) - verificaValor:C2}");
                             valorRetorno = double.Parse(Console.ReadLine());
                             verificaValor += valorRetorno;
                         }
-                        else if (verificaValor > v.vendido(p.Nome))// Valor maior, requer troco
+                        if (verificaValor > v.vendido(p))// Valor maior, requer troco
                         {
-                            Console.WriteLine($"O valor da sua compra: {v.vendido(p.Nome)}. " +
-                                              $"Seu troco: {verificaValor - v.vendido(p.Nome)}");
-                            verificaValor -= v.vendido(p.Nome);
+                            Console.WriteLine($"O valor da sua compra: {v.vendido(p):C2}\n " +
+                                              $"Seu troco: {verificaValor - v.vendido(p):C2}\n");
+                            verificaValor -= verificaValor + -v.vendido(p);
                         }
 
                     }
                     else
                     {
+                        Console.WriteLine(">>>>>>>>>>>>>>>>>>>>NOTA DA COMPRA<<<<<<<<<<<<<<<<<<<<");
                         Console.WriteLine($"Refri: {p.Nome}\n" +
-                                          $"Quantidade: {p.QtdItem}\n" +
-                                          $"Valor Unidade: {p.valorUniade(p.Nome)}\n" +
-                                          $"Valor Total a Pagar: {v.vendido(p.Nome)}\n" +
-                                          $"Agora refresque-se e mate sua sede!!");
+                                              $"Quantidade: {p.QtdItem}\n" +
+                                              $"Valor Unidade: {e.valorUniade(p.Nome)}\n" +
+                                              $"Valor Total Recebido: {v.vendido(p):C2}\n" +
+                                              $"Agora refresque-se e mate sua sede!!\n");
+                        Console.WriteLine(">>>>>>>>>>>>>>>>>>>>LubySoftware<<<<<<<<<<<<<<<<<<<<");
                         break;
                     }
 

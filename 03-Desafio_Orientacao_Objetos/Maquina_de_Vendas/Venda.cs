@@ -5,19 +5,18 @@ using System.Text;
 namespace Maquina_de_Vendas
 {
     class Venda
-    {
-        Produto p = new Produto();// Stack Overflow
-
-        public double vendido( string nome )
+    {        
+        public double vendido( Produto p )
         {
-            return p.valorUniade(nome) * p.QtdItem;
+            Estoque e = new Estoque();
+            return e.valorUniade(p.Nome) * p.QtdItem;
         }
 
-        public int contadorVendas( string nome )
+        public int contadorVendas( Produto p )
         {
-            //p.Nome = nome;
             int contItu = 0, contCoca = 0, contPepsi = 0, cont = 0;
-            switch (nome)
+
+            switch (p.Nome)
             {
                 case "itubaina"://Itubaina
                     contItu++;
@@ -35,14 +34,18 @@ namespace Maquina_de_Vendas
                     break;
 
                 case "total":
-                    return contItu + contCoca + contPepsi;
-
-                default:
-                    Console.WriteLine("Valor Inválido");
+                    cont =  contItu + contCoca + contPepsi;
                     break;
             }
-           
             return cont;
+        }
+
+        public double contabilidade( Produto p )
+        {
+            Estoque e = new Estoque();
+            double totalVendas = 0;
+            totalVendas += e.valorUniade(p.Nome) * p.QtdItem;
+            return totalVendas;
         }
     }
 }
