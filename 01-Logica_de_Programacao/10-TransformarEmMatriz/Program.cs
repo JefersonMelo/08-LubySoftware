@@ -26,6 +26,7 @@ namespace TransformarEmMatriz
             {
                 Console.Write($"{item} ");
             }
+
             //Console.Write("Entrada de dados: ");
             //string[] s = Console.ReadLine().Split(',');
             //int[] vet = new int[s.Length];
