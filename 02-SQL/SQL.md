@@ -80,17 +80,17 @@ Gerênciamento de tabelas
 	ALTER TABLE tabela_pessoa
 	ADD idade INTEGER(3);
 
-### 2.8 Crie uma query para criar uma tabela chamada 'tabela_telefone' que pertence a uma pessoa com seguintes campos:\
+### 2.8 Crie uma query para criar uma tabela chamada 'tabela_telefone' que pertence a uma pessoa com seguintes campos:
 * id: int (PK)
 * telefone: varchar(200)
 * pessoa_id: int(FK)
 
-	CREATE TABLE tabela_telefone(
-		id INTEGER PRIMARY KEY,
-		telefone VARCHAR(200),
-		pessoa_id INT,
-		FOREIGN KEY(pessoa_id) REFERENCES tabela_pessoa(id)
-	);
+		CREATE TABLE tabela_telefone(
+			id INTEGER PRIMARY KEY,
+			telefone VARCHAR(200),
+			pessoa_id INT,
+			FOREIGN KEY(pessoa_id) REFERENCES tabela_pessoa(id)
+		);
 
 ### 2.9 Crie uma query para criar uma índice do tipo único na coluna telefone da 'tabela_telefone'.
 
