@@ -26,36 +26,6 @@ namespace TransformarEmMatriz
             {
                 Console.Write($"{item} ");
             }
-
-            //Console.Write("Entrada de dados: ");
-            //string[] s = Console.ReadLine().Split(',');
-            //int[] vet = new int[s.Length];
-            //int[] vet2 = new int[2];
-
-            //int[][,] multArray = new int[s.Length / 2][,];
-            //int i;
-            //for (i = 0; i < vet.Length; i++)// Converter entrada e Preencher o vetor de inteiros
-            //{
-            //    vet[i] = int.Parse(s[i]);
-
-            //}
-            //for (int j = 0; j < s.Length; j++)
-            //{
-            //    for (int k = 0; k < 2; k++)
-            //    {
-            //        vet2[k] = vet[i];
-            //        for (int l = 0; l < multArray.Length; l++)
-            //        {
-            //            multArray[l][i, k] = vet[k] + vet2[l];
-            //        }
-
-            //    }
-            //}
-
-            //foreach (var item in multArray)
-            //{
-            //    Console.Write($"{item} ");
-            //}
         }
     }
 }
