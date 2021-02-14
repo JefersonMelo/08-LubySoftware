@@ -61,7 +61,7 @@ namespace Maquina_de_Vendas
                 Console.Write("Quantidade: ");
                 p.QtdItem = int.Parse(Console.ReadLine());
                 Console.WriteLine($"Valor de Sua Compra: {v.vendido(p):C2}");// Calcula o valor da compra
-                Console.Write("Pagamento: ");
+                Console.Write("Pagamento R$");
                 double verificaValor = double.Parse(Console.ReadLine());
                 double valorRetorno;
                 do
@@ -85,7 +85,7 @@ namespace Maquina_de_Vendas
                         {
                             Console.WriteLine($"O valor da sua compra: {v.vendido(p):C2}\n" +
                                               $"Seu troco: {verificaValor - v.vendido(p):C2}\n");
-                            verificaValor -= verificaValor - v.vendido(p);
+                            verificaValor -= verificaValor - v.vendido(p);// sinais de operação corrigidos
                         }
 
                     }
@@ -94,7 +94,7 @@ namespace Maquina_de_Vendas
                         Console.WriteLine(">>>>>>>>>>>>>>>>>>>>NOTA DA COMPRA<<<<<<<<<<<<<<<<<<<<\n");
                         Console.WriteLine($"Refri: {p.Nome}\n" +
                                               $"Quantidade: {p.QtdItem}\n" +
-                                              $"Valor Unidade: {e.valorUniade(p.Nome)}\n" +
+                                              $"Valor Unidade: {e.valorUniade(p.Nome):C2}\n" +
                                               $"Valor Total Recebido: {v.vendido(p):C2}\n" +
                                               $"Agora refresque-se e mate sua sede!!\n");
                         Console.WriteLine(">>>>>>>>>>>>>>>>>>>>LubySoftware<<<<<<<<<<<<<<<<<<<<<<");
