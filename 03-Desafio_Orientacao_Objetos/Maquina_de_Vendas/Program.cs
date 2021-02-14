@@ -83,21 +83,21 @@ namespace Maquina_de_Vendas
                         }
                         if (verificaValor > v.vendido(p))// Valor maior, requer troco
                         {
-                            Console.WriteLine($"O valor da sua compra: {v.vendido(p):C2}\n " +
+                            Console.WriteLine($"O valor da sua compra: {v.vendido(p):C2}\n" +
                                               $"Seu troco: {verificaValor - v.vendido(p):C2}\n");
-                            verificaValor -= verificaValor + -v.vendido(p);
+                            verificaValor -= verificaValor - v.vendido(p);
                         }
 
                     }
                     else
                     {
-                        Console.WriteLine(">>>>>>>>>>>>>>>>>>>>NOTA DA COMPRA<<<<<<<<<<<<<<<<<<<<");
+                        Console.WriteLine(">>>>>>>>>>>>>>>>>>>>NOTA DA COMPRA<<<<<<<<<<<<<<<<<<<<\n");
                         Console.WriteLine($"Refri: {p.Nome}\n" +
                                               $"Quantidade: {p.QtdItem}\n" +
                                               $"Valor Unidade: {e.valorUniade(p.Nome)}\n" +
                                               $"Valor Total Recebido: {v.vendido(p):C2}\n" +
                                               $"Agora refresque-se e mate sua sede!!\n");
-                        Console.WriteLine(">>>>>>>>>>>>>>>>>>>>LubySoftware<<<<<<<<<<<<<<<<<<<<");
+                        Console.WriteLine(">>>>>>>>>>>>>>>>>>>>LubySoftware<<<<<<<<<<<<<<<<<<<<<<");
                         break;
                     }
 
