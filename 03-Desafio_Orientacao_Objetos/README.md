@@ -1,4 +1,7 @@
-# 3 Desafio em Orientação a Objetos
+# Em Desenvolvimento
+
+## 3 Desafio em Orientação a Objetos
+
 *	Desenvolver programa que rode uma Vending Machine (Máquina de venda de bebidas em lata) utilizando orientação objetos conforme as regras abaixo.
 *	Crie uma interface de usuário simples para execução da máquina.
 *	A máquina deverá possuir um estoque de produtos com valor e quantidade de cada produto. A quantidade de produto no estoque da máquina deve ser alterado conforme realização de vendas dos produtos.
