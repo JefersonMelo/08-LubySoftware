@@ -81,6 +81,7 @@ namespace Vending_Machine
             this.informaçõesDoSistemaToolStripMenuItem.Name = "informaçõesDoSistemaToolStripMenuItem";
             this.informaçõesDoSistemaToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
             this.informaçõesDoSistemaToolStripMenuItem.Text = "Informações do Sistema";
+            this.informaçõesDoSistemaToolStripMenuItem.Click += new System.EventHandler(this.informaçõesDoSistemaToolStripMenuItem_Click);
             // 
             // statusStrip
             // 

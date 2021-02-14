@@ -50,5 +50,13 @@ namespace Vending_Machine
             formFilho.MdiParent = this;
             formFilho.Show();
         }
+
+        private void informaçõesDoSistemaToolStripMenuItem_Click( object sender, EventArgs e )
+        {
+            /*Chamada do Form Vendas*/
+            Form formFilho = new Sobre();
+            formFilho.MdiParent = this;
+            formFilho.Show();
+        }
     }
 }

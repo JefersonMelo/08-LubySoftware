@@ -42,6 +42,7 @@ namespace Vending_Machine
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridVerCompra = new System.Windows.Forms.DataGridView();
+            this.buttonConfirmar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridVerCompra)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +59,7 @@ namespace Vending_Machine
             // radioCocaCola
             // 
             this.radioCocaCola.AutoSize = true;
-            this.radioCocaCola.Location = new System.Drawing.Point(57, 103);
+            this.radioCocaCola.Location = new System.Drawing.Point(61, 83);
             this.radioCocaCola.Name = "radioCocaCola";
             this.radioCocaCola.Size = new System.Drawing.Size(74, 17);
             this.radioCocaCola.TabIndex = 4;
@@ -69,7 +70,7 @@ namespace Vending_Machine
             // radioPepsi
             // 
             this.radioPepsi.AutoSize = true;
-            this.radioPepsi.Location = new System.Drawing.Point(201, 103);
+            this.radioPepsi.Location = new System.Drawing.Point(205, 83);
             this.radioPepsi.Name = "radioPepsi";
             this.radioPepsi.Size = new System.Drawing.Size(51, 17);
             this.radioPepsi.TabIndex = 5;
@@ -80,7 +81,7 @@ namespace Vending_Machine
             // radioItubaina
             // 
             this.radioItubaina.AutoSize = true;
-            this.radioItubaina.Location = new System.Drawing.Point(325, 103);
+            this.radioItubaina.Location = new System.Drawing.Point(329, 83);
             this.radioItubaina.Name = "radioItubaina";
             this.radioItubaina.Size = new System.Drawing.Size(65, 17);
             this.radioItubaina.TabIndex = 6;
@@ -91,7 +92,7 @@ namespace Vending_Machine
             // labelQuantidade
             // 
             this.labelQuantidade.AutoSize = true;
-            this.labelQuantidade.Location = new System.Drawing.Point(54, 179);
+            this.labelQuantidade.Location = new System.Drawing.Point(58, 159);
             this.labelQuantidade.Name = "labelQuantidade";
             this.labelQuantidade.Size = new System.Drawing.Size(65, 13);
             this.labelQuantidade.TabIndex = 7;
@@ -99,14 +100,14 @@ namespace Vending_Machine
             // 
             // textBoxQuantidade
             // 
-            this.textBoxQuantidade.Location = new System.Drawing.Point(122, 176);
+            this.textBoxQuantidade.Location = new System.Drawing.Point(126, 156);
             this.textBoxQuantidade.Name = "textBoxQuantidade";
             this.textBoxQuantidade.Size = new System.Drawing.Size(130, 20);
             this.textBoxQuantidade.TabIndex = 8;
             // 
             // textBoxUnidade
             // 
-            this.textBoxUnidade.Location = new System.Drawing.Point(122, 141);
+            this.textBoxUnidade.Location = new System.Drawing.Point(126, 121);
             this.textBoxUnidade.Name = "textBoxUnidade";
             this.textBoxUnidade.Size = new System.Drawing.Size(130, 20);
             this.textBoxUnidade.TabIndex = 10;
@@ -114,7 +115,7 @@ namespace Vending_Machine
             // labelUnidade
             // 
             this.labelUnidade.AutoSize = true;
-            this.labelUnidade.Location = new System.Drawing.Point(54, 144);
+            this.labelUnidade.Location = new System.Drawing.Point(58, 124);
             this.labelUnidade.Name = "labelUnidade";
             this.labelUnidade.Size = new System.Drawing.Size(67, 13);
             this.labelUnidade.TabIndex = 9;
@@ -122,7 +123,7 @@ namespace Vending_Machine
             // 
             // textBoxTotal
             // 
-            this.textBoxTotal.Location = new System.Drawing.Point(122, 211);
+            this.textBoxTotal.Location = new System.Drawing.Point(126, 191);
             this.textBoxTotal.Name = "textBoxTotal";
             this.textBoxTotal.Size = new System.Drawing.Size(130, 20);
             this.textBoxTotal.TabIndex = 12;
@@ -130,7 +131,7 @@ namespace Vending_Machine
             // labelTotal
             // 
             this.labelTotal.AutoSize = true;
-            this.labelTotal.Location = new System.Drawing.Point(54, 214);
+            this.labelTotal.Location = new System.Drawing.Point(58, 194);
             this.labelTotal.Name = "labelTotal";
             this.labelTotal.Size = new System.Drawing.Size(51, 13);
             this.labelTotal.TabIndex = 11;
@@ -138,7 +139,7 @@ namespace Vending_Machine
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(122, 247);
+            this.textBox1.Location = new System.Drawing.Point(126, 227);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(130, 20);
             this.textBox1.TabIndex = 14;
@@ -146,7 +147,7 @@ namespace Vending_Machine
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(54, 250);
+            this.label2.Location = new System.Drawing.Point(58, 230);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 13;
@@ -160,12 +161,22 @@ namespace Vending_Machine
             this.dataGridVerCompra.Size = new System.Drawing.Size(333, 136);
             this.dataGridVerCompra.TabIndex = 15;
             // 
+            // buttonConfirmar
+            // 
+            this.buttonConfirmar.Location = new System.Drawing.Point(319, 224);
+            this.buttonConfirmar.Name = "buttonConfirmar";
+            this.buttonConfirmar.Size = new System.Drawing.Size(75, 23);
+            this.buttonConfirmar.TabIndex = 16;
+            this.buttonConfirmar.Text = "Confirmar";
+            this.buttonConfirmar.UseVisualStyleBackColor = true;
+            // 
             // Vendas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(442, 450);
+            this.Controls.Add(this.buttonConfirmar);
             this.Controls.Add(this.dataGridVerCompra);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
@@ -203,5 +214,6 @@ namespace Vending_Machine
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridVerCompra;
+        private System.Windows.Forms.Button buttonConfirmar;
     }
 }

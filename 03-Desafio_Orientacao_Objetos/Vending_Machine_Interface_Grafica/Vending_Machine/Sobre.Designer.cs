@@ -35,9 +35,9 @@ namespace Vending_Machine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(705, 529);
+            this.ClientSize = new System.Drawing.Size(705, 560);
             this.Name = "Sobre";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sobre";
             this.ResumeLayout(false);
 
