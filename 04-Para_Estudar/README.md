@@ -5,17 +5,20 @@
 	começar e acredito que todo dev passa por isso.
 
 #### Bom, espero poder lhe ajudar sugerindo que procure esses assuntos:
--		Tipos/Algoritmos/Estrutura de dados - qualquer linguagem moderna orientada a objetos, tem muitas funções para seus tipos primitivos, 
-ter conhecimento desses algoritmos usados nas funções traz uma boa noção dos recursos podemos aproveitar da linguagem. Por exemplo para o C# uma boa referência para o tipo primitivo 
-‘string’: https://docs.microsoft.com/pt-br/dotnet/api/system.string?view=net-5.0#methods.
-A mesma abordagem pode ser dada para tipos mais complexos, por exemplo como podemos manipular datas utilizando 
-‘DateTime’:	https://docs.microsoft.com/pt-br/dotnet/api/system.datetime?view=net-5.0#definition
-Dado o conhecimento nas estruturas de dados, tipos primitivos/complexos da linguagem, 
-parta para estudos de como aprimorar escrita de código. Os livros do Robert Cecil Martin 
-(Tio Bob) são uma ótima fonte. Um termo que irá encontrar nesse âmbito de boa escrita de 
-código será o os princípios SOLID, ter uma noção desses princípios ajuda muito na boa escrita de código. 
-Conhecer design patterns e fundamentos por trás das arquiteturas de software ajuda muito a criar aplicações 
-robustas e também a entender como os frameworks funcionam. Recomendo livros do Martin Fowler, Erich Gamma.
+-	Tipos/Algoritmos/Estrutura de dados - qualquer linguagem moderna orientada a objetos, 
+	tem muitas funções para seus tipos primitivos, ter conhecimento desses algoritmos usados 
+	nas funções traz uma boa noção dos recursos podemos aproveitar da linguagem. Por exemplo 
+	para o C# uma boa referência para o tipo primitivo 
+	‘string’: https://docs.microsoft.com/pt-br/dotnet/api/system.string?view=net-5.0#methods.
+	A mesma abordagem pode ser dada para tipos mais complexos, por exemplo como podemos manipular datas utilizando 
+	‘DateTime’:	https://docs.microsoft.com/pt-br/dotnet/api/system.datetime?view=net-5.0#definition
+	
+-	Dado o conhecimento nas estruturas de dados, tipos primitivos/complexos da linguagem, 
+	parta para estudos de como aprimorar escrita de código. Os livros do Robert Cecil Martin 
+	(Tio Bob) são uma ótima fonte. Um termo que irá encontrar nesse âmbito de boa escrita de 
+	código será o os princípios SOLID, ter uma noção desses princípios ajuda muito na boa escrita de código. 
+	Conhecer design patterns e fundamentos por trás das arquiteturas de software ajuda muito a criar aplicações 
+	robustas e também a entender como os frameworks funcionam. Recomendo livros do Martin Fowler, Erich Gamma.
 
 #### Caso escolha o ASP.NET como stack. 
 O mesmo é um framework fantástico pra desenvolvimento de aplicações, 
