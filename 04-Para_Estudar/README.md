@@ -5,7 +5,7 @@
 	começar e acredito que todo dev passa por isso.
 
 #### Bom, espero poder lhe ajudar sugerindo que procure esses assuntos:
-- Tipos/Algoritmos/Estrutura de dados - qualquer linguagem moderna orientada a objetos, tem muitas funções para seus tipos primitivos, 
+-		Tipos/Algoritmos/Estrutura de dados - qualquer linguagem moderna orientada a objetos, tem muitas funções para seus tipos primitivos, 
 ter conhecimento desses algoritmos usados nas funções traz uma boa noção dos recursos podemos aproveitar da linguagem. Por exemplo para o C# uma boa referência para o tipo primitivo 
 ‘string’: https://docs.microsoft.com/pt-br/dotnet/api/system.string?view=net-5.0#methods.
 A mesma abordagem pode ser dada para tipos mais complexos, por exemplo como podemos manipular datas utilizando 
