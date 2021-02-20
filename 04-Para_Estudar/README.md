@@ -21,17 +21,17 @@
 		robustas e também a entender como os frameworks funcionam. Recomendo livros do Martin Fowler, Erich Gamma.
 
 #### Caso escolha o ASP.NET como stack. 
-		O mesmo é um framework fantástico pra desenvolvimento de aplicações, porém esse, é bem extenso possui 
-		diversos módulos para diversos propósitos, um bom ponto de partida é a 
--		própria documentação disponível na Microsoft https://docs.microsoft.com/pt-br/.
-		Dentro da incubadora .Net na Luby iremos focar no desenvolvimento de aplicações para web, 
-		vou deixar aqui os links dos cursos que utilizamos caso tenha interesse também:
-- 		[C# Orientado a Objetos](https://www.udemy.com/course/programacao-orientada-a-objetos-csharp/)
-- 		[Introdução ao Entity Framework Core](https://desenvolvedor.io/curso-online-introducao-entity-framework-core)
-- 		[Iniciando com ASP.NET Core 2](https://desenvolvedor.io/curso-online-iniciando-com-asp-net-core)
-- 		[REST com ASP.NET Core 2 WebAPI](https://desenvolvedor.io/curso-online-rest-com-asp-net-core-webapi)
-- 		[ASP.NET Core 3.1-C# API com Arquitetura DDD na PRÁTICA](https://www.udemy.com/course/aspnet-core-22-c-api-com-arquitetura-ddd-na-pratica/)
-- 		[Dominando o ASP.NET MVC Core](https://desenvolvedor.io/curso-online-dominando-o-asp-net-mvc-core)
+	O mesmo é um framework fantástico pra desenvolvimento de aplicações, porém esse, é bem extenso possui 
+	diversos módulos para diversos propósitos, um bom ponto de partida é a própria documentação disponível.
+-	Microsoft https://docs.microsoft.com/pt-br/.
+	Dentro da incubadora .Net na Luby iremos focar no desenvolvimento de aplicações para web, 
+	vou deixar aqui os links dos cursos que utilizamos caso tenha interesse também:
+- [C# Orientado a Objetos](https://www.udemy.com/course/programacao-orientada-a-objetos-csharp/)
+- [Introdução ao Entity Framework Core](https://desenvolvedor.io/curso-online-introducao-entity-framework-core)
+- [Iniciando com ASP.NET Core 2](https://desenvolvedor.io/curso-online-iniciando-com-asp-net-core)
+- [REST com ASP.NET Core 2 WebAPI](https://desenvolvedor.io/curso-online-rest-com-asp-net-core-webapi)
+- [ASP.NET Core 3.1-C# API com Arquitetura DDD na PRÁTICA](https://www.udemy.com/course/aspnet-core-22-c-api-com-arquitetura-ddd-na-pratica/)
+- [Dominando o ASP.NET MVC Core](https://desenvolvedor.io/curso-online-dominando-o-asp-net-mvc-core)
 
 
 
