@@ -4,7 +4,7 @@
 	são tantas coisas pra aprender que às vezes fica confuso saber por onde 
 	começar e acredito que todo dev passa por isso.
 
-Bom, espero poder lhe ajudar sugerindo que procure esses assuntos:
+#### Bom, espero poder lhe ajudar sugerindo que procure esses assuntos:
 	Tipos/Algoritmos/Estrutura de dados - qualquer linguagem moderna 
 	orientada a objetos, tem muitas funções para seus tipos primitivos, 
 	ter conhecimento desses algoritmos usados nas funções traz uma boa 
