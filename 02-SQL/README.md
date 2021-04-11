@@ -1,28 +1,24 @@
-# Luby Software
-
-## Tabelas Para Consulta
-	
-	+- - - - +- - - - - - - - - - - - - - - - - - - +
+	+----+-------------------+
 	| tabela_pessoa 	 |
-	+- - - - +- - - - - - - - - - - - - - - - - - - +
+	+----+-------------------+
 	| id | nome           	 |
-	+- - - - +- - - - - - - - - - - - - - - - - - - +
+	+----+-------------------+
 	|  1 | John Doe      	 |
 	|  2 | Jane Doe      	 |
 	|  3 | Alice Jones   	 |
 	|  4 | Bobby Louis  	 |
 	|  5 | Lisa Romero 	 |
-	+- - - - +- - - - - - - - - - - - - - - - - - - +
-	+- - - - +- - - - - - - - - - - - - - - - +- - - - - - - - - - - - - - - - - +
+	+----+-------------------+
+	+----+----------------+-----------------+
 	| tabela_evento                        	|
-	+- - - - +- - - - - - - - - - - - - - - - +- - - - - - - - - - - - - - - - - +
+	+----+----------------+-----------------+
 	| id | evento         | pessoa_id  	|
-	+- - - - +- - - - - - - - - - - - - - - - +- - - - - - - - - - - - - - - - - +
+	+----+----------------+-----------------+
 	|  1 | Evento A       |  2	        |
 	|  2 | Evento B       |  3              |
 	|  3 | Evento C       |  2              |
 	|  4 | Evento D       |  NULL     	|
-	+- - - - +- - - - - - - - - - - - - - - - +- - - - - - - - - - - - - - - - - +
+	+----+----------------+-----------------+
 
 ### Criação de Backups antes de manipular o BD
 
@@ -133,7 +129,7 @@ ADD idade INT
 GO
 ```
 
-### 2.8 Crie uma query para criar uma tabela chamada 'tabela_telefone' que pertence a uma pessoa 
+### 2.8 Crie uma query para criar uma tabela chamada 'tabela_telefone' que pertence a uma pessoa
 
 <!--
 á certinho, coloar o IDENTITY no Id, e tratar os que podem ou não receber nulo,
@@ -147,10 +143,10 @@ mas é só um toque, porque tá correto
 
 ```"
 CREATE TABLE tabela_telefone(
-	id INTEGER PRIMARY KEY IDENTITY,
-	telefone VARCHAR(200),
-	pessoa_id INT,
-	FOREIGN KEY(pessoa_id) REFERENCES tabela_pessoa(id)
+    id INTEGER PRIMARY KEY IDENTITY,
+    telefone VARCHAR(200),
+    pessoa_id INT,
+    FOREIGN KEY(pessoa_id) REFERENCES tabela_pessoa(id)
 )
 GO
 ```
