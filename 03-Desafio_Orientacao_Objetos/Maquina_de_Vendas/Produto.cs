@@ -8,15 +8,10 @@ namespace Maquina_de_Vendas
 
     class Produto
     {
-        private string nome;
-        private int qtdEstoque = 100; 
-        private int qtdItem;
-        private double valor;
-
-        public string Nome { get => nome; set => nome = value; }
-        public int QtdItem { get => qtdItem; set => qtdItem = value; }
-        public int QtdEstoque { get => qtdEstoque; set => qtdEstoque = value; }
-        public double Valor { get => valor; set => valor = value; }
+        public string Nome { get; set; }
+        public int QtdItem { get; set; }
+        public int QtdEstoque { get; set; }
+        public double Valor { get; set; }
 
     }
 
